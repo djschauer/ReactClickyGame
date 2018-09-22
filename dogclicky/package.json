@@ -1,11 +1,13 @@
 {
-  "name": "clickygame",
+  "name": "dogclicky",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "save": "^2.3.2",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

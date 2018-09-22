@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Dog One",
+        "image": "https://www.what-dog.net/Images/faces2/scroll0015.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Two",
+        "image": "https://i.kym-cdn.com/entries/icons/facebook/000/010/346/gdggfjjgfjgfgg.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Three",
+        "image": "https://www.what-dog.net/Images/faces2/scroll001.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Four",
+        "image": "https://www.what-dog.net/Images/faces2/scroll009.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Five",
+        "image": "https://www.what-dog.net/Images/faces2/scroll008.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Six",
+        "image": "https://www.what-dog.net/Images/faces2/scroll0014.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Seven",
+        "image": "https://vaatpets.shelterbuddy.com.au/photos/lostfound/48079.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Eight",
+        "image": "https://pricelesspetrescue.org/PPR_WP/wp-content/uploads/2018/03/adopt-dog.jpg",
+        "clicked": false
+    },
+    {
+        "name": "Dog Nine",
+        "image": "https://jokideo.com/wp-content/uploads/2015/04/Whys-my-bowl-empty-bro-Funny-dog-picture-600x600.jpg",
+        "clicked": false
+    }
+]
