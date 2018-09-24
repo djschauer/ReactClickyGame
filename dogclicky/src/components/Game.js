@@ -6,28 +6,23 @@ import _ from "underscore";
 
 class Game extends Component {
     state = {
-        dogs: dogs,
+        dogArray: dogs,
         score: 0,
         highscore: 0
     }
 
-    // renderDogs = () => {
-    //     this.state.dogs.map(dog => (
-    //         <Card 
-    //             name={dog.name}
-    //             image={dog.image}
-    //             clicked={dog.clicked}
-    //             handleClick={this.handleClick}
-    //         />
-    //     ))
-    // }
-
     handleClick = name => {
-        if (this.state.dogs.find(dog => dog.name === name).clicked) {
-            
+        if (this.state.dogArray.find(dog => dog.name === name).clicked) {
+            alert("You clicked the same card twice. Game Over!")
+            this.setState({
+                highscore: this.state.score > this.state.highscore ? this.state.score : this.state.highscore,
+                score: 0,
+                dogArray: dogs 
+            });
+            this.shuffleDeck();
         } else {
             this.setState({
-                dogs: this.state.dogs.map(dog => (
+                dogArray: this.state.dogArray.map(dog => (
                     dog.name === name ? ({...dog, clicked: true}) : dog
                 )),
                 score: this.state.score + 1
@@ -37,7 +32,7 @@ class Game extends Component {
 
     shuffleDeck = () => {
         this.setState({
-            dogs: _.shuffle(this.state.dogs)
+            dogArray: _.shuffle(this.state.dogArray)
         })
     };
     
@@ -51,7 +46,7 @@ class Game extends Component {
                     <div className="col-3"></div>
                         <div style={{display: "flex", flexWrap: "wrap"}}>
                             {
-                                this.state.dogs.map(dog => (
+                                this.state.dogArray.map(dog => (
                                     <Card 
                                         name={dog.name}
                                         image={dog.image}
